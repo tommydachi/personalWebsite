@@ -10,3 +10,10 @@ const toggle_menu = () => {
 
 // Event listener in the instance of a click, toggle that script
 toggle_animation.addEventListener('click', toggle_menu)
+
+var typing = new Typed(".typing", {
+    strings: ["Hi! I'm... ^500wait a sec...", "Hi! I'm Tommy!"],
+    loop: false,
+    typeSpeed: 80,
+    backSpeed: 80
+})

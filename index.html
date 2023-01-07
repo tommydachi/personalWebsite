@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="styles.css"> 
 </head>
 <body>
+
+    <!-- <div class="loader">
+
+    </div> -->
     <!-- Top Navbar -->
     <nav class="navbar">
         <div class="navbar__container">
@@ -60,22 +64,48 @@
         <div class="about__container">
             <div class="about__content">
                 <h1>About Me</h1>
-                <p>I am a third year computer science student at UNSW.</p>
-                <p>I am currently interning at PwC until 3rd February.</p>
-                <p>In my spare time, I enjoy graphic design, sports and music.</p>
+                <h4>I'm a third year <span>computer science</span> student at <span>UNSW</span> graduating at the end of 2024.</h3>
+                <h4>I made this website as a project to <span>self-learn frontend</span>, and I think it's worked pretty well <span>(hopefully)</span>.
+                    When I'm not Googling on how to fix CSS problems, I enjoy <span>playing sports</span>, <span>spending time with my friends</span>,
+                    <span>listening to music</span> and <span>graphic designing</span>.
+                </h4>
+                <h4>
+                In terms of extracurriculars, I am the <span>Vice President of Marketing</span> at <span>UNSW Engineering Society</span>, where I oversee the society's marketing and brand
+                to ensure we reach and positively impact as many students as possible. I'm grateful to have a creative outlet while studying such a technical degree.
+                </h4>
+
+                <h4>
+                I am currently interning at <span>PwC</span> as a <span>Technology Risk Vacationer</span> until <span>February 3rd, 2023</span>.</h4>
+                </h4>
+                <!-- <h4>My favourite programming language is <span>Python</span>, and I am also competent in <span>C</span> and <span>Java</span>.</h4> -->
             </div>
         </div>
     </div>
-    <script src="app.js"></script>
+
+    <!-- Projects -->
+    <div class="projects" id="projects">
+        <div class="projects__container">
+            <div class="projects__content">
+                <ul class="projects__list">
+                    <li class="projects__item">
+                        This website!
+                    </li>
+                    <li class="projects__item">
+                        This website!
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer__container">
+        <div class="footer__text">
+            <h5>Tommy Truong 2023.</h5>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script>
-        var typing = new Typed(".typing", {
-            strings: ["Hi! I'm... ^500wait a bit.", "Hi! I'm Tommy!"],
-            loop: false,
-            typeSpeed: 100,
-            backSpeed: 100
-        })
-    </script>
+    <script src="app.js"></script>
 </body>
 </html>
 
