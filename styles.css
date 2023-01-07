@@ -9,10 +9,15 @@
 
 body {
     background: aliceblue;
+    margin: 0;
+}
+
+span {
+    display: inline-block;
 }
 
 .navbar {
-    background: white;
+    background: #1d1c1c;
     /* background-image: linear-gradient(to right, #8CA6DB 30%, #B993D6 100%); */
     height: 100px;
     display: flex;
@@ -20,8 +25,9 @@ body {
     align-items: center;
     position: sticky;
     top: 0;
-    z-index: auto;
+    z-index: 999;
     font-size: large;
+    border-bottom: 1px solid white;
 }
 
 .navbar__container {
@@ -35,16 +41,29 @@ body {
     padding: 0;
 }
 
-#navbar__logo {
-    color: #b993d6;
-    color: -webkit-linear-gradient(to right, #B993D6, #8CA6DB);
-    color: linear-gradient(to right, #B993D6, #8CA6DB);
-    background: transparent;
+.home_text {
+    background: #f8c895;
+    background: -webkit-linear-gradient(#f8c895, #eca558);
+    background-clip: none;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     display: flex;
     align-items: center;
     cursor: pointer;
     font-size: 2.5rem;
+    transition: all 0.1s ease;
 }
+
+/* .home_text:hover {
+    /* background: #d882ee;
+    background: -webkit-linear-gradient(right, #d882ee, #4A00E0);
+    background-clip: none;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    /* background-position:1000px;
+    transition: all 0.1s ease;
+} Cannot transition gradients */ 
+
 
 .navbar__menu {
     display: flex;
@@ -58,7 +77,7 @@ body {
 
 .navbar__links {
     font-size: larger;
-    color: black;
+    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -75,7 +94,7 @@ body {
 }
 
 .navbar__links:hover {
-    color: #9D50BB;
+    color: #f8c895;
     transition: all 0.25s ease;
 }
 
@@ -103,7 +122,7 @@ body {
     }
 
     .navbar__menu.active {
-        background: white;
+        background: #1d1c1c;
         top: 100%;
         transition: all 0.5s ease;
         z-index: 99;
@@ -111,6 +130,8 @@ body {
         font-size: 1.7rem;
         text-align: center;
         padding: 0;
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
     }
 
     .navbar__toggle .bar {
@@ -120,7 +141,7 @@ body {
         height: 8px;
         margin: 5px auto;
         transition: all 0.5s ease-in-out;
-        background: black;
+        background: #f8c895;;
         justify-content: center;
     }
 
@@ -152,5 +173,95 @@ body {
 
     #mobile-menu.is-active .bar:nth-child(3) {
         transform: translateY(-18px);
+    }
+}
+
+/* Landing page text */
+
+.landing {
+    background: #1d1c1c;
+    padding: 100px 0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    /* background-clip: none;
+    /* -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */ 
+}
+
+.landing__container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+    max-width: 1250px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.landing__heading {
+    color: white;
+    font-size: 100px;
+}
+
+.landing__heading span {
+    background: #f8c895;
+    /* background: -webkit-linear-gradient(right, #396afc, #2948ff); */
+    background-clip: none;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.landing__desc {
+    color: white;
+    font-size: 50px;
+}
+
+@media screen and (max-width: 960px) {
+    .landing__heading {
+        font-size: 70px;
+    }
+
+    .landing__desc {
+        font-size: 35px;
+    }
+}
+
+/* About section */
+.about {
+    background: #1d1c1c; 
+    padding: 50px 0;
+}
+
+.about__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: 100%;
+    max-width: 1250px;
+    padding: 0 20px;
+}
+
+.about__content {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.about__content h1 {
+    font-size: 80px;
+    color: #f8c895;
+}
+
+@media screen and (max-width: 960px) {
+    .about__content {
+        font-size: 35px;
+    }
+
+    .about__content h1 {
+        font-size: 50px;
     }
 }

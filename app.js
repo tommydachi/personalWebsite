@@ -3,8 +3,10 @@ const links = document.querySelector(".navbar__menu")
 
 // Display toggle animation
 const toggle_menu = () => {
+    // Classlist targets all instances of each query
     toggle_animation.classList.toggle('is-active')
     links.classList.toggle('active')
 }
 
+// Event listener in the instance of a click, toggle that script
 toggle_animation.addEventListener('click', toggle_menu)
