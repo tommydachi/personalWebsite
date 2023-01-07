@@ -18,6 +18,9 @@ span {
     display: inline-block;
 }
 
+ul {
+    list-style: none;
+}
 /* .loader {
     background: #1d1c1c;
     height: 120vh;
@@ -210,6 +213,11 @@ span {
     height: 100%;
 }
 
+.landing__container p {
+    margin: 0;
+    padding: 0 100px;
+}
+
 .landing__heading {
     color: white;
     font-size: 100px;
@@ -240,15 +248,15 @@ span {
 
 /* About section */
 .about {
-    background: #1d1c1c; 
-    padding: 50px 0;
+    background:#1d1c1c; 
+    padding: 0px 0;
     margin: 0;
+    
 }
 
 .about__container {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     margin: 0 auto;
     height: 100%;
@@ -280,10 +288,87 @@ span {
     .about__content h1 {
         font-size: 50px;
     }
-
+    
     .about__content h3 {
         font-size: 40px;
     }
+}
+.projects__container {
+    background:#1d1c1c;
+    list-style: none;
+    padding: 1px;
+}
+
+.projects__div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 200px;
+}
+
+.projects__content {
+    color: white;
+    text-align: center;
+}
+
+.projects__content span {
+    color:#f8c895;
+}
+
+.projects__content h1 {
+    font-size: 80px;
+    color:#f8b771;
+    margin: 0;
+}
+
+.projects__content h3 {
+    font-size: 40px;
+    margin: 30px 0;
+}
+
+.projects__content h4 {
+    font-size: 25px;
+    margin: 0;
+}
+
+.projects__content p {
+    align-items: center;
+    font-size: 20px;
+    /* padding: 0px 100px; */
+}
+
+
+@media screen and (max-width: 960px) {
+
+    .projects__div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 40px;
+    }
+
+    .projects__content {
+        font-size: 25px;
+    }
+
+    .projects__content p {
+        font-size: 20px;
+        padding: 0px 50px;
+    }
+
+    .projects__content h1 {
+        font-size: 50px;
+    }
+
+    .projects__content h3 {
+        font-size: 30px;
+    }
+
+    .projects__content h4 {
+        font-size: 25px;
+    }
+
+
 }
 
 .footer__container {
