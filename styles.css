@@ -39,6 +39,13 @@ h1 {
     z-index: 9999;
 } */
 
+canvas {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
 
 .navbar {
     background: #1d1c1c;
@@ -226,7 +233,7 @@ h1 {
 /* Landing page text */
 
 .landing {
-    background: #1d1c1c;
+    /* background: #1d1c1c; */
     padding-top: 100px;
     padding-bottom: 50px;
     /* padding: 50px 0; */
@@ -272,8 +279,7 @@ h1 {
 
 /* About section */
 .about {
-    background:#1d1c1c; 
-    padding: 0 0;
+    /* background:#1d1c1c;  */
     margin: 0 0;
     
 }
@@ -324,7 +330,7 @@ h1 {
     }
 }
 .projects__container {
-    background:#1d1c1c;
+    /* background:#1d1c1c; */
     list-style: none;
 }
 
@@ -399,7 +405,7 @@ h1 {
 }
 
 .contact__container {
-    background:#1d1c1c;
+    /* background:#1d1c1c; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -482,9 +488,9 @@ h1 {
 }
 
 .footer__container {
+    background: #1d1c1c;
     border-top: 1px solid white;
     padding: 1px;
-    background: #1d1c1c;
 }
 
 .footer__text {

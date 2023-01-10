@@ -17,3 +17,19 @@ var typing = new Typed(".typing", {
     typeSpeed: 80,
     backSpeed: 80
 })
+
+const canvas = document.getElementById('canvas')
+const starback = new Starback(canvas, {
+    width: document.body.clientWidth,
+    height: document.body.clientHeight,
+    type: 'line',
+    speed: 4,
+    frequency: 20,
+    slope: { x: -1, y: 10 },
+    directionX: 1,
+    speed: 3,
+    spread: -10,
+    randomOpacity: true,
+    backgroundColor: ['#0F2027', '#0C1214', '#051218'],
+    quantity: 45,
+})
