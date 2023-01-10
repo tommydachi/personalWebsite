@@ -7,6 +7,7 @@
     <title>Personal Website Tutorial</title>
     <!-- Add after title for style sheet -->
     <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
@@ -34,11 +35,11 @@
                 <li class="navbar__item">
                     <a href="#projects" class="navbar__links" id="home-page">Projects</a>
                 </li>
-                <div class="portfolio">
+                <!-- <div class="portfolio">
                     <li class="navbar__item">
-                        <a href="#designs" class="navbar__links" id="home-page">Creative Portfolio</a>
+                        <a href="#portfolio" class="navbar__links" id="home-page">Creative Portfolio</a>
                     </li>
-                </div>
+                </div> -->
                 <li class="navbar__item">
                     <a href="#contact" class="navbar__links" id="home-page">Contact</a>
                 </li>
@@ -53,8 +54,7 @@
                 <span class="typing"></span>
             </h1>
             <p class="landing__desc">
-                Welcome to my website! I'am an aspiring developer and software engineer with
-                a touch of creativity!
+                Highly motivated aspiring software developer with a touch of creativity!
             </p>
         </div>
     </div>
@@ -64,19 +64,18 @@
         <div class="about__container">
             <div class="about__content">
                 <h1>About Me</h1>
-                <h4>I'm a third year <span>computer science</span> student at <span>UNSW</span> graduating at the end of 2024.</h3>
-                <h4>I made this website as a project to <span>self-learn frontend</span>, and I think it's worked pretty well <span>(hopefully)</span>.
+                <p>I'm a third year <span>computer science</span> student at <span>UNSW</span> graduating at the end of 2024.</p>
+                <p>I made this website as a project to <span>self-learn frontend</span>, and I think it's worked pretty well <span>(hopefully)</span>.
                     When I'm not Googling on how to fix CSS problems, I enjoy <span>playing sports</span>, <span>spending time with my friends</span>,
                     <span>listening to music</span> and <span>graphic designing</span>.
-                </h4>
-                <h4>
+                </p>
+                <p>
                 In terms of extracurriculars, I am the <span>Vice President of Marketing</span> at <span>UNSW Engineering Society</span>, where I oversee the society's marketing and brand
                 to ensure we reach and positively impact as many students as possible. I'm grateful to have a creative outlet while studying such a technical degree.
-                </h4>
+                </p>
 
-                <h4>
-                I am currently interning at <span>PwC</span> as a <span>Technology Risk Vacationer</span> until <span>February 3rd, 2023</span>.</h4>
-                </h4>
+                <p>
+                I am currently interning at <span>PwC</span> as a <span>Technology Risk Vacationer</span> until <span>February 3rd, 2023</span>.</p>
                 <!-- <h4>My favourite programming language is <span>Python</span>, and I am also competent in <span>C</span> and <span>Java</span>.</h4> -->
             </div>
         </div>
@@ -87,7 +86,9 @@
         <div class="projects__container">
             <div class="projects__content">
                 <h1>Projects</h1>
-                <h3>Some of the projects I've worked on are:</h3>
+                <div class="projects__desc">
+                    <p>Some of my favourite projects that I've worked on are:</p>
+                </div>
                 <div class="projects__div">
                     <ul class="projects__list">
                         <li class="projects__item">
@@ -102,8 +103,73 @@
                             </p>
                             <p>Written in <span>Python</span> utilising the <span>Spotipy</span> library to interact with the <span>Spotify Web API</span>.</p>
                         </li>
+                        <li class="projects__item">
+                            <h4>Flutter About Me App</h4>
+                            <p>Created a simple application to showcase personal information as an introductory way to get exposed to and learn Flutter basics through a video tutorial.
+                            </p>
+                            <p>Written in <span>Flutter</span>/<span>Dart</span>.</p>
+                        </li>
+                        <li class="projects__item">
+                            <h4>Slippy</h4>
+                            <p>Created an implementation of "Slippy," a subset of the Unix tool Sed for a Software Construction course, including substitution, deletion, regex and addresses.
+                            </p>
+                            <p>Written in <span>Python</span>.</p>
+                        </li>
+                        <li class="projects__item">
+                            <h4>UNSW Streams</h4>
+                            <p>Recreated the backend functionality of Microsoft Teams in a group project given a supplied frontend.
+                            </p>
+                            <p>Written in <span>Python</span>.</p>
+                        </li>
                     </ul>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Creative Portfolio -->
+    <!-- <div class="portfolio" id="portfolio">
+        <div class="portfolio__container">
+            <div class="portfolio__content">
+                <h1>Creative Portfolio</h1>
+            </div>
+        </div>
+    </div> -->
+    
+    
+    <!-- Contact -->
+    <div class="contact" id="contact">
+        <div class="contact__container">
+            <h1>Contact</h1>
+            <p>Currently you can contact me on LinkedIn and by email, so feel free to reach out to me on either!</p>
+            <div class="contact__links">
+                <!-- Coming soon! -->
+                <!-- <ul class="contact__urls"> -->
+                    <!-- <li class="contact__items"> -->
+                        <div class="contact__item">
+                            <div class="contact__text">
+                                <h4>LinkedIn</h4>
+                            </div>
+                            <a href="https://www.linkedin.com/in/tommy--truong/" class="contact__url"">
+                                <div class="contact__icon">
+                                    <i class="fa fa-linkedin"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- </li> -->
+                        <!-- <li class="contact__items"> -->
+                        <div class="contact__item">
+                            <div class="contact__text">
+                                <h4>Email</h4>
+                            </div>
+                            <a href="mailto:someone@yoursite.com" class="contact__url"">
+                                <div class="contact__icon">
+                                    <i class="fa fa-envelope"></i>
+                                </div>
+                            </a>
+                        </div>
+                    <!-- </li> -->
+                <!-- </ul> -->
             </div>
         </div>
     </div>
