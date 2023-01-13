@@ -39,12 +39,37 @@ h1 {
     z-index: 9999;
 } */
 
+#particles-js::-webkit-scrollbar {
+    display: none;
+}
+
+
+#particles-js{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background: linear-gradient(0deg, #000058, #01014b);
+    background-size: 100% 100%;
+    display: block;
+    z-index: -1;
+} 
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+/* 
 canvas {
     position: absolute;
+    width: 100%;
+    max-height: 3200px;
+    height: 5000px;
     left: 0;
     top: 0;
     z-index: -1;
-}
+    margin: 0;
+    overflow:scroll;
+} */
 
 
 .navbar {
@@ -71,53 +96,6 @@ canvas {
     margin: 0 auto;
     padding: 0;
 }
-
-.home_text {
-    font-size: 150px;
-    background: conic-gradient(crimson, coral, blue, white, yellow, crimson);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
-    background-size: 5000px 5000px;
-    animation: rgb 4s linear infinite;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    font-size: 2.5rem;
-    transition: all 0.1s ease;
-    padding: 0 30px;
-}
-
-@keyframes rgb {
-    0% {
-        background-position: 0 0;
-    }
-    25% {
-        background-position: 0 100%;
-    }
-    50% {
-        background-position: 100% 100%;
-    }
-    75% {
-        background-position: 100% 0;
-    }
-    100% {
-        background-position: 0 0;
-    }
-}
-
-/* .home_text:hover {
-    /* background: #d882ee;
-    background: -webkit-linear-gradient(right, #d882ee, #4A00E0);
-    background-clip: none;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
-    /* background-position:1000px;
-    transition: all 0.1s ease;
-} Cannot transition gradients */ 
-
 
 .navbar__menu {
     display: flex;
@@ -230,13 +208,50 @@ canvas {
     }
 }
 
+.home_text {
+    font-size: 150px;
+    background: conic-gradient(crimson, coral, blue, white, yellow, crimson);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background-size: 5000px 5000px;
+    animation: rgb 4s linear infinite;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 2.5rem;
+    transition: all 0.1s ease;
+    padding: 0 30px;
+}
+
+@keyframes rgb {
+    0% {
+        background-position: 0 0;
+    }
+    25% {
+        background-position: 0 100%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    75% {
+        background-position: 100% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
 /* Landing page text */
 
 .landing {
     /* background: #1d1c1c; */
-    padding-top: 100px;
-    padding-bottom: 50px;
+    /* padding-top: 100px;
+    padding-bottom: 50px; */
     /* padding: 50px 0; */
+    padding: 280px 0px;
     align-items: center;
     display: flex;
     justify-content: center;
@@ -256,8 +271,13 @@ canvas {
 }
 
 .landing__heading {
-    font-size: 90px;
-    color:#f8b771;
+    font-size: 130px;
+    background: linear-gradient(65deg, #ffc61a, #c59100 95%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
 }
 
 .landing__desc {
@@ -485,6 +505,24 @@ canvas {
 .contact__url:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
+}
+
+@media screen and (max-width: 960px) {
+    .contact__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 40px;
+    }
+
+    .contact__links {
+        padding: 300px 0;
+    }
+    /* .contact__icon {
+        color: white;
+        width: 50px;
+        height: 50px;
+    } */
 }
 
 .footer__container {
