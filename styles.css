@@ -28,7 +28,12 @@ ul {
 
 h1 {
     font-size: 80px;
-    color: #f8b771;
+    background: linear-gradient(65deg, #ffc61a, #c59100 95%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
     margin: 0 0;
 }
 /* .loader {
@@ -322,7 +327,12 @@ canvas {
 }
 
 .about__content span {
-    color: #e6bd92;
+    background: linear-gradient(65deg, #ffc61a, #c59100 95%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
 }
 
 .about__content p {
@@ -368,7 +378,12 @@ canvas {
 }
 
 .projects__content span {
-    color:#f8c895;
+    background: linear-gradient(65deg, #ffc61a, #c59100 95%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
 }
 
 .projects__desc p {
@@ -386,7 +401,6 @@ canvas {
     font-size: 20px;
     /* padding: 0px 100px; */
 }
-
 
 @media screen and (max-width: 960px) {
 
@@ -459,7 +473,12 @@ canvas {
 }
 
 .contact__text {
-    color:#f8c895;
+    background: linear-gradient(65deg, #ffc61a, #c59100 95%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
     /* border: 10px solid red; */
     padding: 0 0;
     /* padding: 0 50px; */
