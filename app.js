@@ -20,7 +20,7 @@ var typing = new Typed(".typing", {
 
 VANTA.GLOBE({
   el: "#test",
-  mouseControls: false,
+  mouseControls: true,
   touchControls: true,
   gyroControls: false,
   minHeight: 200.00,
@@ -31,62 +31,3 @@ VANTA.GLOBE({
   color2: 0xfcf8ee,
   backgroundColor: 0x1d1c1c
 })
-/* -----------------------------------------------
-/* How to use? : Check the GitHub README
-/* ----------------------------------------------- */
-
-/* To load a config file (particles.json) you need to host this demo (MAMP/WAMP/local)... */
-/*
-particlesJS.load('particles-js', 'particles.json', function() {
-  console.log('particles.js loaded - callback');
-});
-*/
-
-/* Otherwise just put the config content (json): */
-
-// particlesJS('particles-js',
-  
-// {
-//   "particles": {
-//     "number": {
-//       "value": 60
-//     },
-//     "shape": {
-//       "type": "circle"
-//     },
-//     "size": {
-//       "value": 3,
-//       "random": true
-//     },
-//     "line_linked": {
-//       "enable": false
-//     },
-//     "move": {
-//       "enable": true,
-//       "speed": 3,
-//       "direction": "bottom",
-//       "straight": false
-//     }
-//   },
-//   "interactivity": {
-    
-//   }
-// }
-
-// );
-
-// const canvas = document.getElementById('canvas')
-// const starback = new Starback(canvas, {
-//     width: document.body.clientWidth,
-//     height: document.body.clientHeight,
-//     type: 'line',
-//     speed: 4,
-//     frequency: 20,
-//     slope: { x: -1, y: 10 },
-//     directionX: 1,
-//     speed: 3,
-//     spread: -10,
-//     randomOpacity: true,
-//     backgroundColor: ['#0F2027', '#0C1214', '#051218'],
-//     quantity: 45,
-// })
