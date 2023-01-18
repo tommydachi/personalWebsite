@@ -12,12 +12,25 @@ const toggle_menu = () => {
 toggle_animation.addEventListener('click', toggle_menu)
 
 var typing = new Typed(".typing", {
-    strings: ["Hi! I'm... ^500wait a sec^100", "Hi! I'm Tommy!"],
+    strings: ["Hi, I'm... ^500wait a sec^100", "Hi, I'm Tommy!"],
     loop: false,
     typeSpeed: 70,
     backSpeed: 70
 })
 
+VANTA.GLOBE({
+  el: "#test",
+  mouseControls: false,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  color: 0x2b3cbe,
+  color2: 0xfcf8ee,
+  backgroundColor: 0x1d1c1c
+})
 /* -----------------------------------------------
 /* How to use? : Check the GitHub README
 /* ----------------------------------------------- */
@@ -31,49 +44,49 @@ particlesJS.load('particles-js', 'particles.json', function() {
 
 /* Otherwise just put the config content (json): */
 
-particlesJS('particles-js',
+// particlesJS('particles-js',
   
-{
-  "particles": {
-    "number": {
-      "value": 60
-    },
-    "shape": {
-      "type": "circle"
-    },
-    "size": {
-      "value": 3,
-      "random": true
-    },
-    "line_linked": {
-      "enable": false
-    },
-    "move": {
-      "enable": true,
-      "speed": 3,
-      "direction": "bottom",
-      "straight": false
-    }
-  },
-  "interactivity": {
+// {
+//   "particles": {
+//     "number": {
+//       "value": 60
+//     },
+//     "shape": {
+//       "type": "circle"
+//     },
+//     "size": {
+//       "value": 3,
+//       "random": true
+//     },
+//     "line_linked": {
+//       "enable": false
+//     },
+//     "move": {
+//       "enable": true,
+//       "speed": 3,
+//       "direction": "bottom",
+//       "straight": false
+//     }
+//   },
+//   "interactivity": {
     
-  }
-}
+//   }
+// }
 
-);
+// );
 
-const canvas = document.getElementById('canvas')
-const starback = new Starback(canvas, {
-    width: document.body.clientWidth,
-    height: document.body.clientHeight,
-    type: 'line',
-    speed: 4,
-    frequency: 20,
-    slope: { x: -1, y: 10 },
-    directionX: 1,
-    speed: 3,
-    spread: -10,
-    randomOpacity: true,
-    backgroundColor: ['#0F2027', '#0C1214', '#051218'],
-    quantity: 45,
-})
+// const canvas = document.getElementById('canvas')
+// const starback = new Starback(canvas, {
+//     width: document.body.clientWidth,
+//     height: document.body.clientHeight,
+//     type: 'line',
+//     speed: 4,
+//     frequency: 20,
+//     slope: { x: -1, y: 10 },
+//     directionX: 1,
+//     speed: 3,
+//     spread: -10,
+//     randomOpacity: true,
+//     backgroundColor: ['#0F2027', '#0C1214', '#051218'],
+//     quantity: 45,
+// })
