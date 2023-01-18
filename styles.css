@@ -342,6 +342,8 @@ h1 {
     .about__content p {
         text-align: center;
         font-size: 25px;
+        padding: 0;
+
     }
 }
 
