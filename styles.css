@@ -37,23 +37,19 @@ h1 {
     margin-bottom: 0;
 }
 
-#test {
-    position: fixed;
-    height: 100vh;
-    width: 100vw;
-    /* height: 100%;
-    width: 100%; */
-    /* overflow: auto; */
-    /* background: linear-gradient(180deg, #0909a5, #020270); */
-    /* background-size: 100% 100%; */
-    display: block;
-    z-index: -1;
-} 
 ::-webkit-scrollbar {
     width: 0px;
     background: transparent; /* make scrollbar transparent */
 }
 
+
+#globe-bg {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    display: block;
+    z-index: -1;
+}
 
 .navbar {
     background: #1d1c1c;
@@ -111,6 +107,24 @@ h1 {
     transition: all 0.25s ease;
 }
 
+.logo {
+    font-size: 150px;
+    background: conic-gradient(crimson, coral, blue, white, yellow, crimson);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background-size: 5000px 5000px;
+    animation: rgb 4s linear infinite;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 2.5rem;
+    transition: all 0.1s ease;
+    padding: 0 30px;
+}
+
 /* Screen nav bar */
 @media screen and (max-width: 960px) {
     .navbar__container {
@@ -120,7 +134,7 @@ h1 {
         z-index: auto;
         width: 100%;
         margin: 0 auto;
-        padding: 0 30px;
+        padding: 0;
     }
     
     .navbar__menu {
@@ -189,24 +203,6 @@ h1 {
     }
 }
 
-.logo {
-    font-size: 150px;
-    background: conic-gradient(crimson, coral, blue, white, yellow, crimson);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
-    background-size: 5000px 5000px;
-    animation: rgb 4s linear infinite;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    font-size: 2.5rem;
-    transition: all 0.1s ease;
-    padding: 0 30px;
-}
-
 @keyframes rgb {
     0% {
         background-position: 0 0;
@@ -270,27 +266,34 @@ h1 {
 }
 
 @media screen and (max-width: 960px) {
+    .landing__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0 50px;
+        /* margin: 0 auto; */
+    }
+
     .landing__heading {
-        font-size: 70px;
+        font-size: 65px;
+        margin: 0 0;
     }
 
     .landing__desc {
-        font-size: 35px;
+        font-size: 30px;
+    }
+
+    .down__arrow {
+        font-size: 50px;
     }
 }
 
 /* About section */
 .about {
-    /* background:#1d1c1c;  */
     padding: 50px 0px;
     margin: 0 0;
     
-}
-
-.about__container {
-    margin: 0 auto;
-    height: 100%;
-    /* max-width: 1250px; */
 }
 
 .about__content {
@@ -316,32 +319,37 @@ h1 {
 }
 
 .about__content p {
-    /* font-size: 25px; */
     text-align: left;
     padding: 0 50px;
 }
 
 @media screen and (max-width: 960px) {
 
-    .about__container {
-        padding: 0 60px;
-    }
-
     .about__content {
-        font-size: 35px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 100%;
+        padding: 0 50px;
     }
 
     .about__content h1 {
+        text-align: center;
         font-size: 50px;
     }
     
     .about__content p {
+        text-align: center;
         font-size: 25px;
-        padding: 0 10px;
     }
 }
-.projects__container {
-    /* background:#1d1c1c; */
+
+.projects__div {
+    padding-left: 50px;
+}
+
+.projects__content {
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -350,18 +358,6 @@ h1 {
     max-width: 55%;
     padding-left: 70px;
     text-align: left;
-}
-
-.projects__div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
-    padding-left: 50px;
-
-}
-
-.projects__content {
     color: white;
     margin: 0 0;
 }
@@ -375,54 +371,43 @@ h1 {
     -moz-text-fill-color: transparent;
 }
 
-.projects__desc p {
-    font-size: 35px;
-}
-
 .projects__content h4 {
     font-size: 35px;
-    margin: 0;
 }
 
-.projects__div p {
+.projects__content p {
     align-items: center;
     font-size: 30px;
 }
 
 @media screen and (max-width: 960px) {
+    .projects__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 100%;
+        padding: 0 50px;
+        font-size: 25px;
+        padding: 0px;
+    }
 
     .projects__div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 0 40px;
-    }
-
-    .projects__content {
-        font-size: 25px;
-    }
-
-    .projects__div p {
-        font-size: 25px;
-        padding: 0px 50px;
+        text-align: center;
+        padding: 0 50px;
     }
 
     .projects__content h1 {
         font-size: 50px;
     }
 
-    .projects__content h3 {
-        font-size: 30px;
-    }
-
     .projects__content h4 {
         font-size: 25px;
     }
-    
-    .projects__desc p {
+
+    .projects__content p {
         font-size: 25px;
-        margin: 5px;
-    }
+    }    
 }
 
 .contact__content {
@@ -439,15 +424,7 @@ h1 {
     padding-left: 50px;
 }
 
-.contact__content p {
-    padding-left: 70px;
-    font-size: 35px;
-    color: white;
-    margin: 0;
-}
-
 .contact__links {
-    /* width: 80%; */
     display: flex;
     flex-direction: row;
     padding-left: 90px;
@@ -474,11 +451,32 @@ h1 {
 }
 
 @media screen and (max-width: 960px) {
-    .contact__container {
+    .contact__content {
         display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 100%;
+        text-align: center;
+        padding: 0 50px;
+    }
+
+    .contact__content h1 {
+        padding: 0;
+        font-size: 50px;
+    }
+
+    .contact__links {
+        display: flex;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
-        padding: 0 40px;
+        padding: 10px 0px;
+    }
+
+    .contact__item {
+        font-size: 40px;
+        padding: 0 50px;
     }
 }
 

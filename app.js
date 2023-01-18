@@ -19,7 +19,7 @@ var typing = new Typed(".typing", {
 })
 
 VANTA.GLOBE({
-  el: "#test",
+  el: "#globe-bg",
   mouseControls: true,
   touchControls: true,
   gyroControls: false,
